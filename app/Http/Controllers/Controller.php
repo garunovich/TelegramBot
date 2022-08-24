@@ -8,7 +8,6 @@ class Controller extends BaseController
 {
     /**
      * Выполняет контроллер
-     * Dependency Injection для контроллеров
      *
      * @param Controller $command
      * @param string $data

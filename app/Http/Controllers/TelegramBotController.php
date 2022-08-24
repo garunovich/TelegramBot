@@ -30,7 +30,6 @@ class TelegramBotController extends Controller
         // Делим сообщение на две части - команду и ее параметр
         $message = explode(' ', $request['message']['text'], 2);
 
-        // Dependency Injection для команд бота
         if ($message['0'] == '/start') {
             $response = $this->run(new StartController());
         } elseif ($message['0'] == '/help') {
